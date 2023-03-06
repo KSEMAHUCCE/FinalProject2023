@@ -1,10 +1,36 @@
+@keyframes onPageLoad {
+
+    from {
+        opacity: 0%;
+        transform: scale(110%);
+    }
+
+    to {
+        opacity: 100%;
+        transform: scale(100%);
+    }
+}
+
+@keyframes onPageLoadText {
+
+    from { 
+        opacity: 0;
+        transform: translateY(0);}
+
+    to { 
+        opacity: 85%;
+        transform:translateY(-5%);}
+}
+
+
+
 body {
 
     margin: 0;
     position: relative;
     justify-content: center;
     align-items: center;
-    background-color: rgb(172, 172, 172);
+    background-color: rgb(0, 0, 0);
     font-family: 'Bebas Neue', cursive;
 }
 
@@ -24,9 +50,14 @@ body {
     margin-top: 20%;
     font-size: 2.5rem;
     padding: 10%;
-    opacity: 85%;
+    opacity: 0%;
     text-align: center;
     color: white;
+    animation-name: onPageLoadText;
+    animation-delay: 0.25s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 
 }
 
@@ -36,6 +67,11 @@ body {
     width: 100%;
     height: auto;
     box-shadow: 50px 5px -15px black;
+    animation-name: onPageLoad;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+
     
 }
 
@@ -61,6 +97,7 @@ body {
     width: 100%;
     height: 25%;
     text-align: center;
+    transition: transform 0.25s ease-in-out;
 
 }
 
@@ -83,6 +120,14 @@ body {
 
     background-color: rgb(0, 0, 48);
 }
+
+.menu nav:hover {
+
+    transform: scale(1.05);
+
+}
+
+
 
 
 /*-Tablet Media-*/
@@ -136,6 +181,12 @@ body {
         font-size: 4rem;
         margin-top: 5%;
     }
+
+    .menu nav {
+
+        font-size: 2rem;
+    }
+
 
     .menu nav:first-of-type {
 
