@@ -33,5 +33,5 @@ video.addEventListener('ended', () => {
 });
 
 video.addEventListener('click',function() {
-  video.currentTime = video.duration - 0.8;
+  video.currentTime = video.duration - 0.8; /*Length of Video Minus Time*/
 });
