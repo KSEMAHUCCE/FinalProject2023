@@ -1,3 +1,27 @@
+@keyframes onPageLoad {
+
+    from {
+        opacity: 0%;
+        transform: scale(110%);
+    }
+
+    to {
+        opacity: 50%;
+        transform: scale(100%);
+    }
+}
+
+@keyframes onPageLoadText {
+
+    from { 
+        opacity: 0;
+        transform: translateY(0);}
+
+    to { 
+        opacity: 85%;
+        transform:translateY(-5%);}
+}
+
 body {
     position: relative;
     margin: 0;
@@ -14,6 +38,23 @@ body {
     flex-direction: column;
     align-items:center;
     font-size: 2rem;
+}
+
+.pagetop img {
+
+    animation-name: onPageLoad;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
+}
+.pagetop h1 {
+    opacity: 0;
+    color: white;
+    animation-name: onPageLoadText;
+    animation-delay: 0.25s;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
 }
 
 .HomeButton {
@@ -66,4 +107,54 @@ article section {
         height: auto;
         font-size: 2rem;
         margin-bottom: 3rem;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width: 480px) {
+    .pagetop {
+
+        font-size: 1rem;
+    }
+
+    .HomeButton {
+
+        font-size: 2rem;
+    }
+
+    article h1 {
+
+        font-size: 2.5rem;
+    }
+
+    article section {
+
+        font-size: 1.5rem;
+    }
+    
+}
+
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+    .pagetop {
+
+        font-size: 1.5rem;
+    }
+    
+    .HomeButton {
+
+        font-size: 2.5rem;
+    }
+    article h1 {
+
+        font-size: 3rem;
+    }
+
+    article section {
+
+        font-size: 2rem;
+    }
+
+
 }
