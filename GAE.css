@@ -32,3 +32,17 @@ body {
     text-align: center;
     opacity: 85%;
 }
+
+article h1 {
+
+    font-size: 4rem;
+    
+    }
+    
+article section {
+    
+        width: 75%;
+        height: auto;
+        font-size: 2rem;
+        margin-bottom: 3rem;
+}
