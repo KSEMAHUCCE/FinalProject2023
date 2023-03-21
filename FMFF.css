@@ -6,6 +6,7 @@ body {
     color: white;
 }
 
+
 .pagetop {
     position: relative;
     display: flex;
@@ -15,6 +16,22 @@ body {
     font-size: 2rem;
 }
 
+.HomeButton {
+    position: absolute;
+    z-index: 100;
+    margin: 1rem;
+    top: 0;
+    left: 0;
+    display: block;
+    font-size: 3rem;
+}
+
+.HomeButton a {
+
+    text-decoration: none;
+    color: white;
+    opacity: 75%;
+}
 
 .topimg img{
 
