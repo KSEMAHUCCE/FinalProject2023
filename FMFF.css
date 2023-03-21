@@ -1,0 +1,34 @@
+body {
+
+    margin: 0;
+    background-color: black;
+    font-family: 'Bebas Neue', cursive;
+    color: white;
+}
+
+.pagetop {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+}
+
+
+.topimg img{
+
+    width: 100%;
+    height: auto;
+    opacity: 50%;
+}
+
+.topimagetext {
+    width: 100%;
+    height: auto;
+    z-index: 99;
+    top: 10%;
+    position: absolute;
+    text-align: center;
+    opacity: 85%;
+}

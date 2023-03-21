@@ -82,6 +82,9 @@ div video {
     
 }
 
+.hidden {
+    display: none;
+}
 
 .menu {
     width: 100%;
@@ -109,6 +112,12 @@ div video {
 
 }
 
+.menu a {
+    width: 100%;
+    color: white;
+    text-decoration: none;
+}
+
 .menu nav:first-of-type {
 
     background-color: rgb(0, 0, 0);
@@ -134,35 +143,6 @@ div video {
     transform: scale(1.05);
 
 }
-
-.video-background {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-  }
-  
-  .video-wrap {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-  }
-  
-  .video-background video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: auto;
-    height: auto;
-    min-width: 100%;
-    min-height: 100%;
-    transform: translateX(-50%) translateY(-50%);
-  }
-
 
 /*-Tablet Media-*/
 
@@ -204,29 +184,14 @@ div video {
     }
 
 
-    .video-background video {
-        background: url(videos/wormhole-6797vig2square.mp4) no-repeat center center fixed;
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-      }
-
-
 
       
 }
 
 /* Phone Media */
 
-@media screen and (max-width: 480px) {
-    .video-background video {
-      background: url(videos/wormhole-6797vig2phone.mp4) no-repeat center center fixed;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-    }
+@media only screen and (max-width: 480px) {
+
   }
 
 /*-Standard Screen/WideScreen Media-*/
